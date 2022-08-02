@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sam's Library</title>
+</head>
+<body>
+    <nav>
+        <h1>Sam's Library</h1>
+        <button class="login">Log in</button>
+    </nav>
+    <main>
+        <section class="bookAdditionBar" >
+            <form>
+                <div class=>
+                    <label for="bookTitle">Book</label>
+                    <input type="text" id="bookTitle" name="bookTitle">
+                </div>
+                <div>
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author">
+                </div>
+                <div>
+                    <label for="Status">Status</label>
+                    <select type="text" id="status" name="status" required>
+                        <option value="" disable selected hidden >Choose</option>
+                        <option value="Want to Read">Want to Read</option>
+                        <option value="Reading">Currently Reading</option>
+                        <option value="Unread">Read</option>
+                    </select>
+                    <input type="button" value="Submit" class="buttonPrimary" onclick="updateForm();">
+                </div>
+            </form>
+        </section>
+        <section>
+            <table id="results" width="360">
+                <thead>
+                <tr>
+                    <th scope="col" width="120">Book</th>
+                    <th scope="col" width="120">Author</th>
+                    <th scope="col" width="120">Status</th>
+                </tr>
+                </thead>
+            </table>
+        </section>
+    </main>
+
+</body>
+<script type=text/javascript src="script.js"></script>
+</html>
